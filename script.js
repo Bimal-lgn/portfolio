@@ -1,5 +1,5 @@
 // -------------- For scroll to view service me section -----------------
-document.getElementById('skill-btn').addEventListener("click", function(){
+document.getElementById('skills-btn').addEventListener("click", function(){
     const targetDiv = document.getElementById('skill');
 
     targetDiv.scrollIntoView({ behavior: "smooth"});
