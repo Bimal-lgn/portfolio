@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    overflow-x: hidden;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.nav-bar{
+    width: 100vw;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.bar{
+    width: 80vw;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+
+/*-----------For Search bar --------------*/
+.search-bar{
+    width: 850px;
+    height: 40px;
+    background-color: rgba(0, 119, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+}
+.search-bar input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.search-bar button{
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+.search-bar button:hover{
+    cursor: pointer;
+}
+.search-bar button i{
+    font-size: 1rem;
+}
+
+/*--------- For login Icon and menu ---------------*/
+.log-in{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    height: 40px;
+
+    &:hover{
+    background-color: rgb(0, 68, 255);
+    color: #fff;
+    cursor: pointer;
+    }
+}
+.cart, .seller{
+    display: flex;
+    align-items: center;
+}
+.cart p, .seller p{
+    margin-left: 10px;
+}
+.cart, .seller, .dropdown:hover{
+    cursor: pointer;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    margin-top: 310px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: 200px;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+#top a{
+    text-decoration: none;
+    color: rgb(0, 68, 255);
+    font-weight: bold;
+}
+
+.down{
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-menu ul{
+    padding: 0;
+    margin: 0;
+}
+.dropdown-menu li{
+    list-style-type: none;
+    padding: 10px;
+    color: #000;
+}
+.dropdown-menu li i{
+    margin-right: 10px;
+}
+.dropdown-menu li:hover{
+    background-color: #f0f0f0;
+}
+.dropdown-menu-two{
+    display: none;
+    position: absolute;
+    margin-left: -180px;
+    width: 230px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu-two ul{
+    padding: 0;
+    margin: 0;
+}
+.dropdown-menu-two li{
+    list-style-type: none;
+    padding: 10px;
+    color: #000;
+}
+.dropdown-menu-two li:hover{
+    background-color: #f0f0f0;
+}
+
+/*--------- For Section One ---------------*/
+.section-one-back{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+.section-one{
+    width: 80vw;
+    height: 135px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+.box img{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.box p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.box:hover{
+    cursor: pointer;
+}
+
+/*--------- For banner section ---------------*/
+.banner{
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.slide-content{
+    width: 80vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+.mySlides{
+    display: none;
+    transform: scale(1);
+}
+
+/*--------- For section two and its boxes---------------*/
+.section-two-back{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+.section-two h2{
+    width: 100%;
+    margin-left: 10px;
+}
+.section-two{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+.box-two{
+    width: 220px;
+    height: 70%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.box-two img{
+    width: auto;
+    height: 150px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.box-two p{width: 100%; text-align: center;}
+.box-two h4{
+    width: 100%;
+    text-align: center;
+    margin-top: -30px;
+}
+
+/*------------- For banner two ------------------*/
+.banner-two{
+    width: 100vw;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.banner-two-images{
+    width: 80vw;
+    overflow: hidden;
+}
+
+/*------------ For section three ------------------*/
+.section-three{
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    color: #808080;
+}
+.section-three h2{
+    margin-left: 20px;
+}
+.section-three p{
+    margin-left: 40px;
+}
+
+/*------------ For section four -------------------*/
+.section-four{
+    width: 100vw;
+    height: 290px;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-four-boxes{
+    width: 400px;
+    margin-left: 20px;
+}
+.section-four-boxes h1{
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.section-four-boxes h2{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.section-four-boxes h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.section-four-boxes2{
+    margin-top: 30px;
+    padding-left: 20px;
+    border-left: 1px solid rgb(165, 165, 211);
+    height: 250px;
+}
+.section-four-boxes2 h1, h6{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.section-four-boxes2 h6{
+    margin-top: 30px;
+}
+.section-four-boxes2 p{
+    margin-top: 20px;
+    color: #fff;
+}
+
+.section-four-boxes3{
+    margin-top: 30px;
+    padding-left: 20px;
+    height: 250px;
+}
+.section-four-boxes3 h1{
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+.section-four-boxes3 p{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/*---------------------- For Footer --------------------------*/
+.footer{
+    width: 100vw;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    border-top: 1px solid rgb(165, 165, 211);
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.footer a i{
+    color: gold;
+    font-size: 0.7rem;
+}
+
+/*--------- Mediaquery Section start form here ---------------*/
+
+@media screen and (min-width: 1366px) and (max-width: 1367px) {
+    .search-bar{
+        width: 700px;
+    }
+    .log-in p, .cart p, .seller p{
+        display: none;
+    }
+    .banner{
+        height: 280px;
+    }
+    .section-two{
+        height: 300px;
+
+    }
+    .section-two-back{
+        height: 300px;
+    }
+    .box-two{
+        width: 150px;
+    }
+    .box-two img{
+        height: 100px;
+    }
+}
