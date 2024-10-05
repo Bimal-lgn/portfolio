@@ -318,6 +318,7 @@ img{
 }
 .about{
     width: 80%;
+    margin-bottom: 20px;
 }
 #myBtn{
     display: none;
