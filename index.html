@@ -3,165 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <title>Bimal Lugun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Project1</title>
 </head>
 <body>
     <div class="nav-bar">
-        <div class="logo">
-            <h2>COD<span>E</span>R</h2>
-        </div>
-        <div class="menu">
-            <a href="#skill" id="skills-btn">Skills</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-            <a href="#about-me">About</a>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="info">
-            <div class="info-box">
-                <p id="notif">Hello! I'm</p>
-                <h2>Mr.Bimal Lugun</h2>
-                <p>A professional Web developer.</p>
-            
-            <div class="button-box">
-                <div class="buttons">
-                    <button id="download" onclick="downloadCv()">Download CV</button>
-                    <button id="work">My Work</button>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="logo">
+                <img src="flipkartLogo.svg" title="flipkart">
+            </div>
+            <div class="right-menu">
+                <a href="#donwload" class="hide-icons"><i class="fa-solid fa-download"></i></a>
+                <a href="#ac" class="hide-icons"><i class="fa-regular fa-user"></i> You</a>
+                <a href="#cart" class="hide-icons"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="search-bar">
+               <div class="search">
+                <button title="Search Icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" title="Search for Products, Brands and More" placeholder="Search for Products, Brands and More">
+               </div>
+            </div>
+            <div class="log-in" title="log In">
+                    <i class="fa-regular fa-user"></i>
+                <p>Login</p>
+                <i class="fa-solid fa-chevron-down down"></i>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li id="top" title="Sign Up">New customer? <a href="@">Sing Up</a></li>
+                        <li title="Profile"><i class="fa-regular fa-user" ></i>My Profile</li>
+                        <li title="Plus zone"><i class="fa-solid fa-plus"></i>Flipkart Plus Zone</li>
+                        <li title="orders"><i class="fa-solid fa-box"></i>Orders</li>
+                        <li title="wishes"><i class="fa-solid fa-heart"></i>Wishlist</li>
+                        <li title="rewards"><i class="fa-solid fa-gift"></i>Rewards</li>
+                        <li title="gifts"><i class="fa-solid fa-hand-holding-dollar"></i>Gift Cards</li>
+                    </ul>
                 </div>
             </div>
+            <div class="cart" title="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
             </div>
-        </div>
-        <div class="img">
-            <div class="img-box">
-                <img src="MyIcon.png" alt="My-picture">
+            <div class="seller" title="Become a Seller">
+                <i class="fa-solid fa-shop"></i>
+                <p>Become a Seller</p>
             </div>
-        </div>
-    </div>
-    <div class="skills" id="skill">
-        <div class="skill-box">
-            <div class="web-dev-img">
-                <img src="Web-Developer.jpg" alt="Image01">
-            </div>
-            <div class="story">
-                <div class="story-text">
-                    <div class="text">
-                        <h2>Read About My Life <br> Struggle Story!</h2>
-                        <p>I started my journey into web development 3 years ago with little to no programming experience. I began by learning HTML, the building blocks of web pages. It was a bit challenging at first to understand the syntax and structure, but with practice and patience, I gradually got the hanging of it. After 2 months as i progressed, I moved on to Css, which allow me to style my web pages and make them visually appealing. I experimented with different properties and selectors to create custom designs. JavaScript was the next step, and it opened up a whole new world of possibilities. I learned how to add interactivity to my web pages, create dynamic elements, an handle user input.</p>
-                    </div>
-                </div>
-            <div class="bars">
-                <div class="percent-bars">
-                    <h4>HTML 80%</h4>
-                    <div class="html-bar"><div class="html"></div></div>
-                    <h4>CSS 60%</h4>
-                    <div class="css-bar"><div class="css"></div></div>
-                    <h4>JavaScript 40%</h4>
-                    <div class="js-bar"><div class="js"></div></div>
+            <div class="dropdown" title="Dropdown with more help Tolls">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="dropdown-menu-two">
+                    <ul>
+                        <li><i class="fa-solid fa-bell"></i> Notification Preferences</li>
+                        <li><i class="fa-solid fa-headphones"></i> 24X7 Customer Care</li>
+                        <li><i class="fa-regular fa-star"></i> Advertise</li>
+                        <li><i class="fa-solid fa-download"></i> Download App</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        </div>
     </div>
-    <div class="dots">
-        <div class="dot-box">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </div>
-    <div class="services" id="services">
-        <div class="service-text">
-            <h2>Services</h2>
-            <p><b>responsive Design:</b> Ensure your website look great on all devices. <b>SEO optimization:</b> Improve your search engine rankings. <b>Custom Website Development:</b> Tailored solutions to meet your unique needs. <b>E-commerce Development:</b> Create a seamless online shopping experience.</p>
-        </div>
-        <div class="service-boxes">
-            <a href="#html" id="html"><i class="fa-brands fa-html5 logo-icon"></i>. HTML</a>
-            <a href="#css" id="css"><i class="fa-brands fa-css3 logo-icon"></i>. CSS</a>
-            <a href="#js" id="js"><i class="fa-brands fa-js logo-icon"></i>. JavaScript</a>
-            <a href="#webDev" id="web-dev"><i class="fa-solid fa-window-maximize logo-icon"></i>. Web Development</a>
-        </div>
-    </div>
-    <div class="numbers-section">
-        <div class="boxes">
+    <div class="section-one-back">
+        <div class="section-one">
             <div class="box">
-                <h1>5+</h1>
-                <p>Clients</p>
+                <img src="top_Offers.png" alt="top_Offers">
+                <p>Top Offers</p>
             </div>
             <div class="box">
-                <h1>46</h1>
-                <p>Projects</p>
+                <img src="mobile&tablets.PNG" alt="mobile&tablets">
+                <p>Mobile & Tablets</p>
             </div>
             <div class="box">
-                <h1>8</h1>
-                <p>Awards</p>
+                <img src="tv&appliances.PNG" alt="tv&appliances">
+                <p>TV & appliances</p>
             </div>
-            <div class="box last-box">
-                <h1>3</h1>
-                <p>Years Experience</p>
+            <div class="box">
+                <img src="electronics.PNG" alt="electronics">
+                <p>Electronics</p>
+            </div>
+            <div class="box">
+                <img src="fashions.PNG" alt="fashions">
+                <p>Fashions</p>
+            </div>
+            <div class="box">
+                <img src="beauty.PNG" alt="beauty">
+                <p>Beauty</p>
+            </div>
+            <div class="box" style="display: none;">
+                <img src="home&kitchen.PNG" alt="homeKitcher">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="box" style="display: none;">
+                <img src="furniture.PNG" alt="furniture">
+                <p>Furniture</p>
+            </div>
+            <div class="box" style="display: none;">
+                <img src="travels.PNG" alt="travels">
+                <p>Travels</p>
+            </div>
+            <div class="box" style="display: none;">
+                <img src="grocery.PNG" alt="grocery">
+                <p>Grocery</p>
             </div>
         </div>
     </div>
-    <div class="dots">
-        <div class="dot-box">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+    <div class="banner">
+        <div class="slide-content">
+            <img src="banner_one.PNG" class="mySlides" alt="Image 1">
+            <img src="banner_two.PNG" class="mySlides" alt="Image 2">
+            <img src="banner_three.PNG" class="mySlides" alt="Image 3">
+            <img src="banner_four.PNG" class="mySlides" alt="Image 4">
+            <img src="banner_five.PNG" class="mySlides" alt="Image 5">
         </div>
     </div>
-    <div class="portfolio" id="portfolio">
-        <div class="folio-text">
-            <h2>Portfolio</h2>
-            <p>In these three years i have learned so many things that i represent here in this section.</p>
-        </div>
-    </div>
-    <div class="folio-items">
-        <div class="folio">
-            <div class="folio-box">
-               <a href="Projects/index.html">
-                <img class="images" src="project_pic_one.PNG">
-                <img class="images" src="project_pic_two.PNG">
-                <img class="images" src="project_pic_three.PNG">
-                <img class="images" src="project_pic_four.PNG">
-               </a>
+    <div class="section-two-back">
+        <div class="section-two">
+            <div class="h2">
+                <h2>Best of Electronics</h2>
             </div>
-            <div class="folio-box"></div>
-            <div class="folio-box"></div>
-            <div class="folio-box"></div>
+            <div class="box-two">
+                <img src="buds.jpg" alt="Buds">
+                <p>Best Truewireless headph...</p>
+                <h4>Grab Now</h4>
+            </div>
+            <div class="box-two">
+                <img src="speakers.jpg" alt="Speakers">
+                <p>Best Selling Mobile Speak...</p>
+                <h4>From ₹499*</h4>
+            </div>
+            <div class="box-two">
+                <img src="trimmer.png" alt="Trimmer">
+                <p>Best of Shavers</p>
+                <h4>From ₹1,649</h4>
+            </div>
+            <div class="box-two">
+                <img src="smartwatch.jfif" alt="Smartwatch">
+                <p>Noise Smartwatches</p>
+                <h4>From ₹1,099</h4>
+            </div>
+            <div class="box-two" style="display: none;">
+                <img src="hdd.png" alt="Portable ssd">
+                <p>Sandisk Extreme Portable</p>
+                <h4>From ₹5,799</h4>
+            </div>
+            <div class="box-two" style="display: none;">
+                <img src="monitors.jpg" alt="Monitors">
+                <p>Monitors</p>
+                <h4>From ₹6,599</h4>
+            </div>
         </div>
     </div>
-    <div class="freelance">
-        <div class="freelance-box">
-            <h1>I'm Avaliable for Freelancing</h1>
-            <a href="https://www.linkedin.com/in/bimal-lugun">Hire Me</a>
+    <div class="banner-two">
+        <div class="banner-two-images">
+            <img src="banner-two.PNG" alt="">
         </div>
     </div>
-    <div class="services contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact</h2>
+    <div class="section-three">
+        <h2>Flipkart: The One Step Shopping Destination</h2>
+        <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p><br><br>
+        <p>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. </p><br><br>
+        <h2>Flipkart Plus</h2>
+        <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! </p><br><br>
+        <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:</p><br>
+        <p>An annual Zomato Gold membership</p><br>
+        <p>An annual Hotstar Premium membership</p><br>
+        <p>6 months Gaana plus subscription</p><br>
+        <p>Rupees 550 instant discount on flights on ixigo</p><br>
+        <p>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.</p><br><br>
+        <h2>No Cost EMI</h2>
+        <p>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p><br><br>
+        <h2>EMI on Debit Cards</h2>
+        <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. </p><br><br>
+        <h2>Mobile Exchange Offers</h2>
+        <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. </p><br><br>
+        <h2>What Can You Buy From Flipkart?</h2>
+        <h2>Mobile Phones</h2>
+        <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - </p>
+    </div>
+    <div class="section-four">
+        <div class="section-four-boxes">
+            <h1>About</h1>
+            <h2><a href="#">Contact Us</a></h2>
+            <h2><a href="#">About Us</a></h2>
+            <h2><a href="#">Careers</a></h2>
+            <h2><a href="#">Flipkart Stories</a></h2>
+            <h2><a href="#">Press</a></h2>
+            <h2><a href="#">Corporate Information</a></h2>
         </div>
-        <div class="service-boxes">
-            <a href="mailto:bimallgn@gmail.com"><i class="fa-regular fa-envelope"></i>. Email Me</a>
-            <a href="tel: +918249042737"><i class="fa-solid fa-phone"></i>. Call Me</a>
-            <a href="https://www.instagram.com/bimal_lgn"><i class="fa-brands fa-instagram"></i>. Follow Me</a>
-            <a href="https://www.linkedin.com/in/bimal-lugun"><i class="fa-brands fa-linkedin"></i>. Follow Me</a>
+        <div class="section-four-boxes">
+            <h1>Group companies</h1>
+            <h2><a href="#">Mytra</a></h2>
+            <h2><a href="#">Cleartrip</a></h2>
+            <h2><a href="#">Shopsy</a></h2>
+        </div>
+        <div class="section-four-boxes">
+            <h1>Help</h1>
+            <h2><a href="#">Payments</a></h2>
+            <h2><a href="#">Shipping</a></h2>
+            <h2><a href="#">Cancellation & Returns</a></h2>
+            <h2><a href="#">FAQ</a></h2>
+            <h2><a href="#">Report Infringement</a></h2>
+        </div>
+        <div class="section-four-boxes">
+            <h1>consumer policy</h1>
+            <h2><a href="#">Cancellation & Returns</a></h2>
+            <h2><a href="#">Terms of Use</a></h2>
+            <h2><a href="#">Security</a></h2>
+            <h2><a href="#">Privacy</a></h2>
+            <h2><a href="#">Sitemap</a></h2>
+            <h2><a href="#">Grievance Redressal</a></h2>
+            <h2><a href="#">EPR Compliance</a></h2>
+        </div>
+        <div class="section-four-boxes2">
+            <h1>Mail Us</h1>
+            <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia & <br> Clove Embassy Tech Village, <br> Outer Ring Road, Devarabeesanahalli Village, <br> Bengaluru, 560103, <br> Karnataka, India</p>
+            <h6>social: </h6>
+        </div>
+        <div class="section-four-boxes3">
+            <h1>Registered Office Address</h1>
+            <p>Flipkart Internet Private Limited,<br>Buildings Alyssa, Begonia & <br> Clove Embassy Tech Village, <br> Outer Ring Road, Devarabeesanahalli Village, <br> Bengaluru, 560103, <br> Karnataka, India <br>CIN : U51109KA2012PTC066107 <br> Telephone: <a href="#">044-45614700 / 044-67415800</a></p>
         </div>
     </div>
-    <div class="about-text" id="about-me">
-        <div class="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with 2 years of hands on experience in crafting innovative and resposive web soutions. Currently, I'm pursuing my engineering degree, further honing my technical skills and expanding my knowledge of web development best practices. My goal is to leverage my expertise to create exceptional online experiences that delight users and drive business sucess.</p>
-        </div>
-    </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <div class="footer">
-        <p>©bimallugun2024</p>
+        <a href="#"><i class="fa-solid fa-shop"></i> Become a Seller</a><a href="#"><i class="fa-regular fa-star"></i> Advertise</a><a href="#"><i class="fa-solid fa-gift"></i> Gift Cards</a><a href="#"><i class="fa-solid fa-question"></i> Help Center</a><a href="#">© 2002-2024 Flipkart.com</a>
+        <img src="footer-img.PNG" alt="">
     </div>
     <script src="script.js"></script>
 </body>
